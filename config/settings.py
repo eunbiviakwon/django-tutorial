@@ -104,10 +104,13 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
+from django.utils.translation import gettext_lazy as _
+LANGUAGES = [
+    ('ko', ('Korean')),
+]
+LANGUAGE_CODE = 'ko'
 
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
